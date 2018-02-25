@@ -227,6 +227,7 @@ def find_name_duplicates(filename):
         elif line[4] == "Fall 2015":
             fall_15.add(name)
 
+    #finds the intersection of all names in all cohorts
     duplicate_names = winter_16 & spring_16 & summer_16 & fall_15
 
     return duplicate_names
@@ -273,7 +274,6 @@ print find_cohort_by_student_name(all_students_data)"""
 ##############################################################################
 # END OF MAIN EXERCISE.  Yay!  You did it! You Rock!
 #
-
 
 
 if __name__ == "__main__":
